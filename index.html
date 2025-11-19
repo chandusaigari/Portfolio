@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chandu Saigari | Data Scientist Portfolio</title>
+
+    <!-- Smooth Scroll + Fade Animations -->
+    <style>
+        * {
+            margin: 0; padding: 0; box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Arial", sans-serif;
+            background: #000;
+            color: #fff;
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        a {
+            color: #00e5ff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-shadow: 0 0 10px #00e5ff;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 100px 20px 70px;
+            opacity: 0;
+            transform: translateY(40px);
+            transition: 1s ease;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            color: #00e5ff;
+            text-shadow: 0 0 15px #00e5ff;
+            font-weight: 800;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            color: #ccc;
+        }
+
+        /* Section Titles */
+        h2 {
+            font-size: 2.6rem;
+            border-left: 6px solid #00e5ff;
+            padding-left: 15px;
+            margin-bottom: 25px;
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: 1s ease;
+        }
+
+        /* Container */
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        /* About */
+        #about p {
+            font-size: 1.2rem;
+            color: #ccc;
+            opacity: 0;
+            transform: translateY(40px);
+            transition: 1s ease;
+        }
+
+        /* Skills */
+        .skills ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 20px;
+            list-style: none;
+        }
+
+        .skills li {
+            background: #111;
+            border: 1px solid #222;
+            padding: 18px;
+            border-radius: 10px;
+            opacity: 0;
+            transform: translateY(40px);
+            transition: 1s ease;
+        }
+
+        .skills li:hover {
+            box-shadow: 0 0 18px #00e5ff;
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+
+        /* Download Resume Button */
+        .resume-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            border: 2px solid #00e5ff;
+            color: #00e5ff;
+            font-size: 1.2rem;
+            border-radius: 8px;
+            transition: 0.3s ease;
+        }
+        .resume-btn:hover {
+            background: #00e5ff;
+            color: #000;
+            box-shadow: 0 0 20px #00e5ff;
+        }
+
+        /* Projects */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            padding: 20px;
+            background: #111;
+            border: 1px solid #222;
+            border-radius: 10px;
+            opacity: 0;
+            transform: translateY(40px);
+            transition: 1s ease;
+        }
+
+        .project-card:hover {
+            box-shadow: 0 0 18px #00e5ff;
+            transform: translateY(-8px);
+        }
+
+        .project-card h3 {
+            color: #00e5ff;
+            margin-bottom: 10px;
+        }
+        .project-card p {
+            color: #bbb;
+            margin-bottom: 10px;
+        }
+
+        /* Contact */
+        .contact-info {
+            background: #0a0a0a;
+            border: 1px solid #222;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .contact-info li {
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background: #020202;
+            padding: 25px;
+            color: #aaa;
+            margin-top: 40px;
+        }
+
+        /* Reveal Animation Class */
+        .reveal {
+            opacity: 1 !important;
+            transform: translateY(0) translateX(0) !important;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header id="header">
+    <h1>Chandu Saigari</h1>
+    <p>Data Scientist • Machine Learning Engineer • AI Innovator</p>
+    <a href="resume.pdf" download class="resume-btn">Download Resume</a>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am <strong style="color:#00e5ff;">Chandu Saigari</strong>, a Data Scientist passionate about solving complex problems 
+        using Machine Learning, Deep Learning, and NLP. I transform data into meaningful business insights 
+        and build AI-driven solutions that create real-world impact.
+        <br><br>
+        My focus: <strong style="color:#00e5ff;">AI • ML Systems • Predictive Insights • Business Intelligence</strong>.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section>
+    <h2>Skills</h2>
+    <div class="skills">
+        <ul>
+            <li><strong>Programming:</strong> Python, SQL, R</li>
+            <li><strong>ML / AI:</strong> DL, NLP, Unsupervised & Supervised ML</li>
+            <li><strong>Visualization:</strong> Power BI, Tableau, Plotly</li>
+            <li><strong>Frameworks:</strong> TensorFlow, PyTorch, Scikit-Learn</li>
+            <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB</li>
+            <li><strong>Tools:</strong> Docker, Git, Jupyter, Colab</li>
+        </ul>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section>
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="project-card">
+            <h3>Customer Segmentation (K-Means)</h3>
+            <p>Grouping customers based on patterns for targeted marketing.</p>
+            <a href="#" target="_blank">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Predictive Maintenance ML</h3>
+            <p>Predicting failures in machinery using ML to reduce downtime.</p>
+            <a href="#" target="_blank">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Twitter Sentiment Analysis (NLP)</h3>
+            <p>Real-time sentiment monitoring with NLP pipelines.</p>
+            <a href="#" target="_blank">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Sales Forecasting (Time Series)</h3>
+            <p>Forecasting sales for effective planning and inventory control.</p>
+            <a href="#" target="_blank">View Project</a>
+        </div>
+    </div>
+</section>
+
+<!-- YOUTUBE -->
+<section>
+    <h2>YouTube Channel</h2>
+    <p>
+        I share tutorials, ML explanations, and project walkthroughs on my channel.<br><br>
+        <a href="#" target="_blank">Visit My YouTube Channel</a>
+    </p>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-info">
+    <h2>Contact</h2>
+    <ul>
+        <li>Email: <a href="mailto:chandusaigari@gmail.com">chandusaigari@gmail.com</a></li>
+        <li>LinkedIn: <a href="#">linkedin.com/in/chandusaigari</a></li>
+        <li>GitHub: <a href="#">github.com/chandusaigari</a></li>
+    </ul>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2025 Chandu Saigari • All Rights Reserved
+</footer>
+
+<!-- Scroll Animation Script -->
+<script>
+    function revealOnScroll() {
+        let elements = document.querySelectorAll("h2, p, li, .project-card, #header");
+
+        for (let el of elements) {
+            let top = el.getBoundingClientRect().top;
+            let height = window.innerHeight - 100;
+
+            if (top < height) {
+                el.classList.add("reveal");
+            }
+        }
+    }
+
+    window.addEventListener("scroll", revealOnScroll);
+    window.onload = revealOnScroll;
+</script>
+
+</body>
+</html>
